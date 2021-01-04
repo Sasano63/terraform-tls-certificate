@@ -10,7 +10,7 @@ resource "tls_self_signed_cert" "root" {
   private_key_pem = "${tls_private_key.root.private_key_pem}"
 
   subject {
-    common_name  = "${var.common_name}"
+   # common_name  = "${var.common_name}"
     organization = "${var.organization}"
   }
 
