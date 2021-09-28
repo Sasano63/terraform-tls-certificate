@@ -11,7 +11,7 @@ output "ca_private_key_pem" {
 
 output "ca_cert_pem" {
   value = "${tls_self_signed_cert.root.cert_pem}"
-  sensitive = true
+  sensitive = false
 
 }
 
